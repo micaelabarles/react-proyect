@@ -1,0 +1,38 @@
+*{padding: 0;
+margin: 0;
+width: 100%;}
+
+.logo{height: 50px;
+width: auto;
+margin: 20px;
+margin-left: 40px;}
+
+a{width: fit-content;}
+
+li img{height: 40px;
+width: 40px;
+float:right}
+
+header{display:flex;
+justify-content: right;
+margin-top: 5px;}
+
+nav{display: flex;
+justify-content:right;}
+
+ul{display:flex;
+justify-content: flex-end;
+margin-right: 20px;}
+
+li{display: inline;
+width:fit-content;
+margin: 20px;}
+
+li:hover{filter:drop-shadow(1px 1px 3px #888)}
+
+.productos{display: flex;
+text-decoration: none;
+color:black;
+margin-top: 5px;
+font-size: 20px;
+font-weight: 500;}
