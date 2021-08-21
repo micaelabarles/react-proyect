@@ -1,7 +1,7 @@
-import logo from './v.svg'
-import cart from './shopping-cart.svg'
-import user from './login.svg'
+import logo from './media/v.svg'
+import user from './media/login.svg'
 import './Navbar.css'
+import Widget from './CartWidget'
 function Navbar(){
     return(
         <header>
@@ -12,7 +12,7 @@ function Navbar(){
             <ul>
             <li><a href="#" className="productos">Productos</a></li>
             <li><a href="#"><img src={user}/></a></li>
-            <li><a href="#"><img src={cart}/></a></li>
+             <Widget />
             </ul>
         </nav>
         
