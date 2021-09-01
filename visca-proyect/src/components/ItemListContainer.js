@@ -1,4 +1,5 @@
 import ItemCount from './ItemCount'
+import ItemList from './ItemList'
 
 function ItemListContainer({greeting = "Catálogo de productos"}){
 
@@ -9,6 +10,7 @@ function ItemListContainer({greeting = "Catálogo de productos"}){
     return(
         <div>
         <h1>{greeting}</h1>
+        <ItemList />
         <ItemCount initial={1} stock={10} onAdd={onAdd} />
         </div>
     )

@@ -1,0 +1,106 @@
+*{padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;}
+    
+    
+    body{height: 100%;
+    width: 100%;}
+    
+    .container{width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        }
+    
+    .container .card{
+        border: 1px solid black;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;}
+        
+    .card{display: inline-block;
+    filter: drop-shadow(10px 20px 20px #888);
+    background-color: white;}
+    
+    .card a{text-decoration: none;
+        color:rgb(83, 83, 83);
+        font-weight: bold;}
+    
+    .img-chica{width: 250px;}
+    
+    button{display: block;
+    width: 100%;
+    height: 50px;}
+    
+    input{width: 30px;
+    text-align: center;}
+    
+    .details{padding: 10px;}
+    
+    div p{padding-bottom: 10px;}
+    
+    i .bi .bi-heart{color: palevioletred;
+    background-color: palevioletred;}
+    
+    .talle{display: inline;}
+    
+    .tamaño{width: 20px;
+    height: 20px;
+    display: inline;
+    border-radius: 50%;
+    border: hidden;}
+    
+    .tamaño:hover{background-color: blueviolet;
+    border-radius: 50%;
+    cursor: pointer;}
+    
+    .color{display: inline;}
+    
+    .gris{width: 15px;
+        height: 15px;
+        display: inline;
+        background-color:rgb(99, 99, 99);
+        border-radius: 50%;
+        border: hidden;}
+    
+    .negro{width: 15px;
+    height: 15px;
+    display: inline;
+    background-color: black;
+    border-radius: 50%;
+    border: hidden;}
+    
+    .rosado{width: 15px;
+    height: 15px;
+    display: inline;
+    background-color: fuchsia;
+    border-radius: 50%;
+    border: hidden;}
+    
+    .precio{display: inline;}
+    
+    .eleccion{padding-bottom: 10px;}
+    
+    .curve{display: inline}
+    
+    .count{display: inline;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    padding: 0px 20px 0px 20px;}
+    
+    .quantity{border: 1px black solid;
+    width: max-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;}
+    
+    .quantity input{border: none;}
