@@ -1,6 +1,6 @@
 import logo from './media/v.svg'
 import user from './media/login.svg'
-import './Navbar.css'
+import './styles/Navbar.css'
 import Widget from './CartWidget'
 function Navbar(){
     return(
