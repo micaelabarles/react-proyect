@@ -1,10 +1,10 @@
 
-function ItemDetail({product}) {
+function ItemDetail({productsDetails}) {
     return(
         <div>
-            <img src={product.pictureUrl}></img>
-            <h2>{product.title}</h2>
-            <p>{product.price}</p>
+            <img src={productsDetails.pictureUrl}></img>
+            <h2>{productsDetails.title}</h2>
+            <p>{productsDetails.price}</p>
         </div>
     )
 }

@@ -17,7 +17,7 @@ import img14 from './media/img14.jpg'
 import img15 from './media/img15.jpg'
 import img16 from './media/img16.jpg'
 
-const products = [
+const productsDetails = [
     {id:1, title:"Remera básica mujer", price: 900, pictureUrl:img1},
     {id:2, title:"t-basicm", price: 900, pictureUrl:img2},
     {id:3, title:"t-smile", price: 1000, pictureUrl:img3},
@@ -52,7 +52,7 @@ function ItemDetailContainer(){
 
     return(
         <div>
-            <ItemDetail products={products} />
+            <ItemDetail productsDetails={productsDetails} />
         </div>
     )
 }
