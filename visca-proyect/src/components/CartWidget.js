@@ -1,8 +1,9 @@
+import {Link} from 'react-router-dom'
 import cart from './media/shopping-cart.svg'
 
 function Widget(){
     return(
-        <li><a href="#"><img src={cart} alt="logo"/></a></li>
+        <li><Link to={`/Cart`}><img src={cart} alt="logo"/></Link></li>
     )
 }
 
