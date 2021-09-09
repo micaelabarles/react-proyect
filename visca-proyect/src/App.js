@@ -9,10 +9,13 @@ function App() {
       <Navbar />
       <hr></hr>
       <Switch>
-        <Route exact path='/productos'>
+        <Route exact path='/'>
           <ItemListContainer />
         </Route>
-        <Route exact path='/detalle'>
+        <Route exact path='/category/:id'>
+          <ItemListContainer />
+        </Route>
+        <Route exact path='/item/:id'>
           <ItemDetailContainer />
         </Route>
      </Switch>

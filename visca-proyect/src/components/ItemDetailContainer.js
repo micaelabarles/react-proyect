@@ -19,7 +19,11 @@ export function ItemDetailContainer(){
     },[item])
     return(
         <div>
-            <ItemDetail product={product} />
+            {product && 
+            product.map((item)=>{
+            return <ItemDetail product={item} />
+        })
+}
         </div>
     )
 }

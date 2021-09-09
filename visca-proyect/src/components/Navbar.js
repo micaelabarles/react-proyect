@@ -11,7 +11,7 @@ function Navbar(){
 
         <nav>
             <ul>
-            <li><Link to={`/productos`} className="productos">Productos</Link></li>
+            <li><Link to={`/`} className="productos">Productos</Link></li>
             <li><Link to={`/users`}><img src={user} alt="img user"/></Link></li>
             <Widget />
             </ul>
