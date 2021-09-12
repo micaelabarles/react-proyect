@@ -6,7 +6,6 @@ import { getProducts } from './promises'
 function ItemListContainer(){
     const[products, setProducts] = useState([])
     const {category} = useParams()
-    console.log(category)
 
     useEffect(()=>{
         if (category === undefined){

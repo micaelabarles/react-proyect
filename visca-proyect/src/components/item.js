@@ -8,7 +8,7 @@ function Item({product}){
             <div className="card">
                 <img src={pictureUrl} className="img-chica" alt="imagen del producto"></img>
                 <h3>{title}</h3>
-                <p>{price}</p>
+                <p>${price}</p>
                 <Link to={`/item/${id}`}>Ver Detalles</Link>
             </div>
 

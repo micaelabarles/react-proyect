@@ -9,7 +9,7 @@ function ItemDetail({item}) {
         <div className="details">
             <img src={item.pictureUrl} alt="imagen del producto"></img>
             <h2>{item.title}</h2>
-            <p>{item.price}</p>
+            <p>${item.price}</p>
             <p>{item.detail}</p>
             <ItemCount initial={1} stock={10} onAdd={onAdd} />
         </div>
