@@ -4,27 +4,19 @@ import {useParams} from 'react-router'
 import {getProducts} from './promises'
 
 export function ItemDetailContainer(){
-    const [product, setProduct] = useState([]);
-    const {item} = useParams()
+    const [item, setItem] = useState([]);
+    const {id} = useParams()
 
     useEffect(()=>{
-        if(item === undefined){
-            getProducts
-            .then(resp=>{setProduct(resp)})
-        }
-        else{
-            getProducts
-            .then(resp=>{setProduct(resp.find(e => item === e.item))})
-        }
-    },[item])
+    getProducts.then((resp)=>{
+        setItem(resp.find((i)=>parseInt(id) === i.id))
+    })
+    },[id])
     return(
         <div>
-            {product && 
-            product.map((item)=>{
-            return <ItemDetail product={item} />
-        })
-}
-        </div>
+            {item && <ItemDetail item={item} />
+       }
+       </div> 
     )
 }
 
