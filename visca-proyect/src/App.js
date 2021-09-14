@@ -3,8 +3,10 @@ import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart'
+// import { CartContextProv } from './components/CartContext';
 function App() {
   return (
+    // <CartContextProv>
     <Router>
       <Navbar />
       <hr></hr>
@@ -23,6 +25,7 @@ function App() {
         </Route>
      </Switch>
     </Router>
+    // </CartContextProv>
   );
 }
 
