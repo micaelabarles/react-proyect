@@ -3,7 +3,7 @@ import cart from './media/shopping-cart.svg'
 
 function Widget(){
     return(
-        <li><Link to={`/Cart`}><img src={cart} alt="logo"/></Link></li>
+        <li><Link to={`/cart`}><img src={cart} alt="logo"/></Link></li>
     )
 }
 

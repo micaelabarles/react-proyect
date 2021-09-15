@@ -4,6 +4,9 @@ import {Link} from 'react-router-dom'
 function Item({product}){
     const{title, pictureUrl, price, id} = product
     return(
+        <div>
+
+
         <div className="container">
             <div className="card">
                 <img src={pictureUrl} className="img-chica" alt="imagen del producto"></img>
@@ -14,6 +17,7 @@ function Item({product}){
 
 
 
+        </div>
         </div>
     )
 }

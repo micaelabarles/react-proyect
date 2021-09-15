@@ -3,10 +3,12 @@ import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart'
-// import { CartContextProv } from './components/CartContext';
+import {CartContextProvider} from './components/CartContext'
+
 function App() {
   return (
-    // <CartContextProv>
+
+  <CartContextProvider>
     <Router>
       <Navbar />
       <hr></hr>
@@ -14,18 +16,18 @@ function App() {
         <Route exact path='/'>
           <ItemListContainer />
         </Route>
-        <Route exact path='/category/:id'>
+        <Route exact path='/category/:category'>
           <ItemListContainer />
         </Route>
         <Route exact path='/item/:id'>
           <ItemDetailContainer />
         </Route>
         <Route exact path='/cart'>
-          <Cart />
+        <Cart />
         </Route>
      </Switch>
     </Router>
-    // </CartContextProv>
+  </CartContextProvider>
   );
 }
 

@@ -18,6 +18,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
         onAdd(count)
         setCount(initial)
         setChangeButton(true)
+
     } 
 
     return (
