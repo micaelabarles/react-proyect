@@ -3,6 +3,8 @@ import logo from './media/v.svg'
 import user from './media/login.svg'
 import './styles/Navbar.css'
 import Widget from './CartWidget'
+
+
 function Navbar(){
     return(
         <header>
@@ -13,7 +15,7 @@ function Navbar(){
             <ul>
             <li><Link to={`/`} className="productos">Productos</Link></li>
             <li><Link to={`/users`}><img src={user} alt="img user"/></Link></li>
-            <Widget />
+            <Widget/>
             </ul>
         </nav>
         

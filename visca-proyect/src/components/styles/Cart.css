@@ -1,0 +1,28 @@
+.cartProducts{
+    display: flex;
+}
+
+.cartProducts img{height: 80px;
+    width: auto;}
+
+.cartProducts h3{text-align: center;}
+
+.cartProducts p{text-align: center;}
+
+.total{
+text-align: right;}
+
+.btn-removeAll{
+float: right;
+height: 30px;
+width: auto;
+margin: 10px;}
+
+.btn-removeItem{
+    height: 30px;
+    width: 100px;
+    margin-left: -20px;
+}
+
+.btn-removeItem:hover{color: red;
+border: solid red 1px;}
