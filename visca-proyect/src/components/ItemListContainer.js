@@ -1,22 +1,24 @@
 import {useEffect, useState} from 'react'
 import {useParams} from 'react-router'
 import ItemList from './ItemList'
-import { getProducts } from './promises'
+import {getFirestore} from './service/getFirebase'
 
 function ItemListContainer(){
     const[products, setProducts] = useState([])
     const {category} = useParams()
 
     useEffect(()=>{
+        const db = getFirestore()
+        db.collection('items').get().then(resp =>{
         if (category === undefined){
-            getProducts
-            .then(resp=> setProducts(resp))
+        setProducts(resp.docs.map((i) => i.data()));
         }
         else{
-            getProducts
-            .then(resp => setProducts(resp.filter((i) => category === i.category)))
+            let data = resp.docs.map((i) => i.data())
+            setProducts(data.filter((i) => category === i.category))
         }
-    },[category])
+    })
+   },[category])
 
     return(
         <div>

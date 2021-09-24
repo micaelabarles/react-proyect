@@ -14,10 +14,10 @@ function ItemDetail({item}) {
     }
     return(
         <div className="details">
-            <img src={item.pictureUrl} alt="imagen del producto"></img>
+            <img src={item.image} alt="imagen del producto"></img>
             <h2>{item.title}</h2>
             <p>${item.price}</p>
-            <p>{item.detail}</p>
+            <p>{item.description}</p>
             <ItemCount initial={1} stock={10} onAdd={onAdd} />
         </div>
     )
